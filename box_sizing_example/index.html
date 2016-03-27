@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<style type="text/css">
+	 .rectangle {
+	     width: 50%;
+	     margin: 10px 0;
+	 }
+
+	 .box_sizing_border {
+	     box-sizing: border-box;
+	     padding: 0 30px;
+	     border: solid 5px #5f9;
+	 }
+
+	 .box_sizing_content_padding {
+	     box-sizing: content-box;
+	     padding: 0 30px;
+	 }
+
+	 .box_sizing_content_border {
+	     box-sizing: content-box;
+	     border: solid 5px #559;
+	 }
+	</style>
+    </head>
+    <body>
+	<div class="rectangle" style="background-color: #f90">
+	    width: 50%;
+	</div>
+	<div class="box_sizing_border rectangle" style="background-color: #599">
+	    width:50%;<br>
+	    box-sizing: border-box;<br>
+	    padding: 0 30px;<br>
+	    border: solid 5px #5f9;
+	</div>
+	<div class="box_sizing_content_border rectangle" style="background-color: #55f">
+	    width:50%;<br>
+	    box-sizing: border-box;<br>
+	    border: solid 5px #5f9;
+	</div>
+	<div class="box_sizing_content_padding rectangle" style="background-color: #55f">
+	    width:50%;<br>
+	    box-sizing: border-box;<br>
+	    padding: 0 30px;<br>
+	</div>
+    </body>
+</html>
