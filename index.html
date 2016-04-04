@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<style>
+	 .box {
+	     width: 200px;
+	     height: 100px;
+	     margin: 10px;
+	     background-color: #33f;
+	     color: white;
+	     padding: 10px;
+	     transition: 1s;
+	 }
+
+	 .box.hover:hover {
+	     width: 400px;
+	     background-color: #f33;
+	 }
+	 .box.click {
+	 }
+	 .box.click.clicked {
+	     width: 400px;
+	     background-color: #3f3;
+	 }
+	</style>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script>
+	 $(function() {
+	     $(".click").click(function() {
+		 $(this).toggleClass("clicked");
+	     });
+	 });
+	</script>
+    </head>
+    <body>
+	<div class="box hover">:hover</div>
+	<div class="box click">.click</div>
+    </body>
+</html>
